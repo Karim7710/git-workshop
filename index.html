@@ -1,0 +1,160 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="http://fonts.cdnfonts.com/css/amydor" rel="stylesheet">
+
+
+  <title>Checkpoint DOM</title>
+</head>
+<body>
+<header>
+ 
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <img src="jm2.png" class="jumia">
+      <form class="d-flex">
+        <input class="form-control me-2" style="margin-left: 125; width: 366px;" type="search" placeholder="Chercher un produit, une marque ou une catégorie..." aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Chercher</button>
+      </form>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+         
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style="margin-left: 110;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Besoin <br> d'aide
+            </a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Votre <br> compte
+              </a>
+              <li class="nav-item">
+                <img src="panier.png" style="width: 10%; margin-bottom: -20px;margin-top: 17px;" class="panier">
+                <a  class="nav-link active" aria-current="page" href="#" style="color: rgba(0,0,0,.55);">Panier</a>
+              </li>
+              
+  
+          </li>
+         
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+
+</header>
+<main>
+ <div class="boxhead">
+
+<h3> Panier (2 article)</h3>
+<div class="titlebox">
+  <p class="p1">Article </p>
+  <p class="p2">Quantité</p>
+  <p class="p3">Prix Unitaire</p>
+  <p class="p4">Sous-Total</p>
+</div>
+           </div>
+<div id="fordelete">
+  <div  id="box1">
+    <div class="box1img">
+      <img src="jm.jpg" >
+    </div>
+    
+    <div class="box11">
+      <h5 style="color:#ababab; margin-left: 10px;">Vendeur : H2i technologie</h5>
+      <h4 style="margin-left: 10px;font-weight: 500;">Kit Piéton CX330 - bleu</h4>
+      <div class="box11part2">
+        <span id="heart" class="heart" style="cursor: pointer">♡</span>
+        <button class="btnsup">METTRE DE COTE</button>
+        <span class="glyphicon">&#xe020;</span>
+        <button class="btnsupp" id="btnsupprimer">SUPPRIMER</button> </div>
+      </div>
+
+      <div class="box12">
+        <button class="plus-btn">+</button>
+        <span class="span" id="qtn1">0</span>
+        <button class="minus-btn">-</button>
+      </div>
+
+      <div class="box13">
+        <p class="pu" id="pu" style="font-size: 18px;font-weight: 500;">  <span   class='price' id="price1" > 12.99</span>   DT</p>
+        <p style="font-size: 14px; color: #ababab;  text-decoration: line-through">24.9 DT</p>
+        <p style="font-size: 12px; text-decoration: line-through; color: #7ed321;" >economie : 12.00 DT</p>
+      </div>
+
+      <div class="box14">
+        <p > <span id="soustotal1"> 12.99</span> DT</p>
+        
+      </div>
+      </div>
+    </div>
+ 
+    
+
+
+          <div class="box2" id="fordelete2">
+            <div class="box2img">
+              <img src="jm1.jpg" >
+            </div>
+            
+            <section class="box11">
+              <h5 style="color:#ababab; margin-left: 10px;">Vendeur : Yuka Store</h5>
+              <h4 style="margin-left: 10px;font-weight: 500;">VR Box 2020 casque réalité virtuel </h4>
+              <div class="box11part2">
+                <span  id="heart" class="heart"  style="cursor: pointer;">♡</span>
+                <button class="btnsup">METTRE DE COTE</button>
+                <span class="glyphicon" >&#xe020;</span>
+                <button class="btnsupp" id="btnsupp2">SUPPRIMER</button> </div>
+            </section>
+        
+              <div class="box12">
+                <button class="plus-btn">+</button>
+                <span class="span" id="qtn">0</span>
+                <button class="minus-btn">-</button>
+              </div>
+        
+              <div class="box13">
+                <p  style="font-size: 18px;font-weight: 500;"><span   class='price' id="price2" > 39.00</span>  DT</p>
+                <p style="font-size: 14px; color: #ababab; text-decoration: line-through">09.00 DT</p>
+                <p style="font-size: 12px;; color: #7ed321;" >economie : 50.00 DT</p>
+              </div>
+        
+              <div class="box14">
+                <p ><span class="soustotal2"> 39.00</span> DT</p>
+              </div>
+              </div>
+  <div class="total">
+    <div class="total1">
+    <p>Total :</p>
+    <p id="totalfinal"> <span  id='total' >  0</span>  DT</p> </div>
+   
+  <div class='total2'>
+    <p>Frais de livraison non inclus pour le moment</p>
+    </div>
+   </div>
+
+  <div class="finish">
+    <button class="btn1"><a  href="https://www.jumia.com.tn/">POURSUIVRE VOS ACHATS</a> </button>
+    <button class="btn2" style="cursor: pointer;">FINALISER VOTRE COMMANDE</button>
+  </div>
+
+  <footer>
+    <P> &copy; All Rights Reserved 2022 @</P>
+    <p>By : Farhaoui karim</p>
+  </footer>
+             
+        
+         
+            
+</main>
+<script  src='/main.js' ></script>
+</body>
+</html>
